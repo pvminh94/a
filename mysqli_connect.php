@@ -11,3 +11,4 @@ DEFINE ('DB_NAME', 'simpledb');
 $dbcon = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 // Set the encoding...optional but recommended
 $a = mysqli_set_charset($dbcon, 'utf8');
+echo $a;
