@@ -1,2 +1,2 @@
 <?php
-phpinfo();
+//commit 1
