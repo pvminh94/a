@@ -7,5 +7,14 @@ DEFINE ('DB_PASSWORD', 'Hmsv1ct0ry'); // or whatever password you created
 DEFINE ('DB_HOST', 'localhost');
 DEFINE ('DB_NAME', 'simpledb');
 // Make the connection:
-$dbcon = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+try {
+    $dbcon = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 // Set the encoding...optional but recommended
+}
+catch (Exception $e)
+{
+    print "The system busy try later";
+}
+echo mysqli_set_charset($dbcon,'utf8');
+
+
