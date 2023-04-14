@@ -15,6 +15,6 @@ catch (Exception $e)
 {
     print "The system busy try later";
 }
-echo mysqli_set_charset($dbcon,'utf8');
+mysqli_set_charset($dbcon,'utf8');
 
 
