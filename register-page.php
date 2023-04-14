@@ -86,7 +86,6 @@
         </div>
         <!-- Right-side Column Content Section -->
         <?php
-
         if(!isset($errorstring)) {
             echo '<aside class="col-sm-2">';
             include('info-col.php');
