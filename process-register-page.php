@@ -40,6 +40,7 @@ if(empty($errors))
         mysqli_stmt_execute($q);
         if(mysqli_stmt_affected_rows($q)==1)
         {
+            $dbcon->close();
             header("location:register-thanks.php");
             exit();
         }

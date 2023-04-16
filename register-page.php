@@ -64,7 +64,7 @@
                     <label for="password1" class="col-sm-4 col-form-label">Password:</label>
                     <div class="col-sm-8">
                         <input type="password" class="form-control" id="password1" name="password1"
-                               placeholder="Password" minlength="8" maxlength="12" required
+                               placeholder="12345678" minlength="8" maxlength="12" required
                                value="<?php if (isset($_POST['password1'])) echo $_POST['password1']; ?>">
                         <span id='message'>Between 8 and 12 characters.</span>
                     </div>
@@ -73,7 +73,7 @@
                     <label for="password2" class="col-sm-4 col-form-label">Confirm Password:</label>
                     <div class="col-sm-8">
                         <input type="password" class="form-control" id="password2" name="password2"
-                               placeholder="Confirm Password" minlength="8" maxlength="12" required
+                               placeholder="12345678" minlength="8" maxlength="12" required
                                value="<?php if (isset($_POST['password2'])) echo $_POST['password2']; ?>">
                     </div>
                 </div>
